@@ -89,6 +89,8 @@ fartscroll = function(trigger_distance) {
             // save info for next round
             distance = 0;
             lastFire = (new Date()).getTime();
+            if (speed > 2000)
+            	return;
             farts++;
             avgSpeed += (speed - avgSpeed) / farts;
         }
