@@ -79,7 +79,7 @@ fartscroll = function(trigger_distance) {
                 ind++;
             else
                 ind--;
-            ind = Math.max(0, Math.min(ind, audio.length));
+            ind = Math.max(0, Math.min(ind, audio.length - 1));
 
             // play
             var player = getplayer();
